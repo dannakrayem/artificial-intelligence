@@ -1,0 +1,25 @@
+#import a part of the textblob library
+from textblob import TextBlob
+from textblob import Word
+
+#sentiment analysis
+
+beginText = TextBlob("this is grate fun")
+print(beginText.sentiment)
+#polarity means positive or negative
+#high polarity means very negative
+#subjectivity means is it fact or opinion
+#high subjectivity means more opinion
+
+#spelling correction
+print(beginText.correct())
+translateBlob = TextBlob(input("please type in text to translate"))
+trans2 = TextBlob("hello")
+translateBlob = translateBlob.translate(from_lang="en", to= "fr")
+trans2 = trans2.translate(from_lang="en", to="es")
+print(translateBlob)
+print(trans2)
+
+#to pluralize
+w = Word('vertex')
+print(w.pluralize())
