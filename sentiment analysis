@@ -1,0 +1,11 @@
+#import a part of the textblob library
+from textblob import TextBlob
+from textblob import Word
+
+#sentiment analysis
+beginText = TextBlob
+beginText = TextBlob("Learning AI - this is grate fun!")
+print(beginText.sentiment)
+#polarity means positive or negative
+#subjectivity means is it fact or opinion
+#this returns polarity and subjectivity value when you run
